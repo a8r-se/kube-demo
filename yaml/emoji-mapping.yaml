@@ -1,0 +1,18 @@
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Host
+metadata:
+  name: kube-host
+spec:
+  acmeProvider:
+    email: marekojames@datawire.io
+  hostname: "kubecon-demo.kjames.k736.net"
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: web-mapping-emojivoto
+spec:
+  hostname: "*"
+  prefix: /
+  service: http://web-svc.emojivoto:80
