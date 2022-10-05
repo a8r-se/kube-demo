@@ -1,0 +1,5 @@
+k8s_config:
+- manifest_path: /yaml
+  cluster_info:
+    cluster_id: d4c4a963-a8e2-53e4-90b2-10cf3476952c
+    cluster_name: Kubecon Demo '22
