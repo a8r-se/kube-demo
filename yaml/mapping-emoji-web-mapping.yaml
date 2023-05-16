@@ -1,0 +1,14 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: emoji-web-mapping
+  namespace: emojivoto
+  labels: null
+  annotations: {}
+spec:
+  ambassador_id:
+  - default
+  hostname: emojivoto.se02.mturner.k736.net
+  prefix: /
+  service: web-svc.emojivoto:80
+  timeout_ms: 0
